@@ -2,12 +2,12 @@
   "manifest_version": 3,
   "name": "Retep",
   "version": "1.0",
-  "description": "Clear up some Nesus space with retep",
-  "permissions": ["activeTab"],
-  "content_scripts": [
-    {
-      "matches": ["https://www.wikipedia.org/"],
-      "js": ["content.js"]
-    }
-  ]
+  "description": "Clear up some Wikipedia space",
+  "permissions": ["scripting", "activeTab"],
+  "background": {
+    "service_worker": "content.js"
+  },
+  "action": {
+    "default_title": "Clean Page"
+  }
 }
