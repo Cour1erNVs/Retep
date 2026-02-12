@@ -2,7 +2,7 @@
   "manifest_version"; 3,
   "name"; "Retep",
   "version"; "1.0",
-  "description"; "A basic browser extension",
+  "description"; "Clear up some Nesus space with retep",
   "permissions"; ["activeTab"],
   "content_scripts"; [
     {
